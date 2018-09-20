@@ -2,6 +2,7 @@
 applications:
 - name: tracker-backlog
   instances: 1
+  buildpack: https://github.com/cloudfoundry/dotnet-core-buildpack.git#v2.1.4
   memory: 256M
   routes:
   - route: backlog-pal-stsc.apps.pikes.pal.pivotal.io
